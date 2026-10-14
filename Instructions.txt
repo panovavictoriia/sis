@@ -1,0 +1,65 @@
+INTRODUCTION:
+
+use what you have learned so far in the class to Complete the application
+to generate a random set of numbers that meet the rules of the California
+SuperLotto Plus game (rules below). This includes variables, arrays, at least
+one loop, conditionals and JavaScript's built-in functionality. There are
+multiple approaches to this problem. therefore don't feel compelled to use one
+method vs. another. One of the beauties of programming is the ability for
+freedom and self-expression by the methods you choose to tackle the problem.
+I will include some pseudocode and one approach below that you can use to get
+a good starting point.
+
+GAME RULES:
+
+The CA SuperLotto Plus lottery game consists of a draw of 6 numbers total.
+The first 5 numbers are selected randomly from the same set of numbers
+between 1 and 47. This means that you cannot have repeating numbers in this
+set of 5.
+
+The Mega number is a single number drawn randomly from the number set
+between 1 and 27. This number set is NOT related in any way to the first
+set
+
+INSTRUCTIONS:
+
+The "I'm Feeling Lucky" button's click event functionality has already
+been created for you along with the main function that will do the work
+called draw(). The HTML elements that hold the numbers have ID's:
+num1, num2, num3, num4, num5 and mega respectively. There should be no
+reason to change anything in the HTML file. All your work will go in the
+script.js file that's part of this project.
+
+ONE APPROACH:
+
+I call this approach the "empty bucket" approach. There is also a
+"full bucket" approach to this which I may go over after the due date.
+The concept behind the empty bucket approach begins with an empty bucket
+which in programming can be represented as an empty array. Once you have
+an empty bucket, these are the steps you can take to fill the bucket with
+the first 5 numbers:
+
+PSEUDOCODE:
+(Loop while the number of elements in the bucket (array) is <= 5) {
+  Step 1: Generate a random number between 1 and 47
+  Step 2: If the generated number *does NOT* exist in the bucket (array),
+          add it to the bucket (array).
+}
+
+You should be left with a bucket (array) that has 5 unique numbers which
+you can use to display on the page. The Mega number is trivial since all
+you do is generate a random number between 1 and 27 and display it. It is
+not part of first set of 5 numbers. I have included a references for some
+of the functionality you may or may not need below:
+
+
+HELP REFERENCES:
+
+Module 3 JavaScript Arrays (Checking to see if something exists in an array)
+- https://ilearn.laccd.edu/courses/202827/pages/module-3-javascript-arrays
+
+Module 3 JavaScript Loops (For JS loops)
+- https://ilearn.laccd.edu/courses/202827/pages/module-3-javascript-loops
+
+JavaScript Specialty Reference (For generating random numbers)
+- https://ilearn.laccd.edu/courses/202827/pages/specialty-reference
